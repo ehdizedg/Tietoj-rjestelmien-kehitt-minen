@@ -1,0 +1,129 @@
+{
+	"products": [
+		{
+			"id": "Fkirja",
+			"name": "Fantasia kirja",
+			"description": "Fantasiakirja, joka vie lukijan seikkailuun kaukaisiin maailmoihin.",
+			"price": 18.9,
+			"genres": ["fantasia", "seikkailu"]
+		},
+		{
+			"id": "Skirja",
+			"name": "Scifi kirja",
+			"description": "Scifi-kirja, joka tutkii tulevaisuuden teknologioita ja avaruusseikkailuja.",
+			"price": 64,
+			"genres": ["scifi", "seikkailu"]
+		},
+		{
+			"id": "Tkirja",
+			"name": "Tieteellinen kirja",
+			"description": "Tieteellinen kirja, joka kertoo uusista löytyneistä.",
+			"price": 89,
+			"genres": ["tiede", "tietokirjallisuus"]
+		},
+		{
+			"id": "Kkirja",
+			"name": "Kertomus kirja",
+			"description": "Kertomus kirja, joka kertoo uusista löytyneistä.",
+			"price": 72.5,
+			"genres": ["kaunokirjallisuus", "fantasia"]
+		},
+		{
+			"id": "Fkirja2",
+			"name": "Varjojen valtakunta",
+			"description": "Fantasiaseikkailu salaperäisen valtakunnan rajalta.",
+			"price": 22.9,
+			"genres": ["fantasia", "seikkailu"]
+		},
+		{
+			"id": "Skirja2",
+			"name": "Avaruuden etuvartio",
+			"description": "Tieteisseikkailu ihmiskunnan ensimmäiseltä avaruusasemalta.",
+			"price": 24.9,
+			"genres": ["scifi", "seikkailu"]
+		}
+	],
+	"users": [
+		{
+			"id": "U1001",
+			"name": "Onni Hagström",
+			"email": "xxx.xx@example.test",
+			"password": "example123",
+			"isAdmin": true,
+			"purchaseHistory": [
+				{
+					"orderId": "ORD-2026-101",
+					"purchasedAt": "2026-10-12T10:15:00Z",
+					"items": [
+						{ "productId": "Fkirja", "quantity": 1, "unitPrice": 18.9 },
+						{ "productId": "Kkirja", "quantity": 1, "unitPrice": 72.5 }
+					],
+					"total": 91.4
+				},
+				{
+					"orderId": "ORD-2026-118",
+					"purchasedAt": "2026-10-24T16:40:00Z",
+					"items": [
+						{ "productId": "Skirja", "quantity": 1, "unitPrice": 64 }
+					],
+					"total": 64
+				}
+			]
+		},
+		{
+			"id": "U1002",
+			"name": "Olivia Karppi",
+			"email": "xxx.xx@example.test",
+			"password": "example1234",
+			"isAdmin": false,
+			"purchaseHistory": [
+				{
+					"orderId": "ORD-2026-109",
+					"purchasedAt": "2026-10-18T08:25:00Z",
+					"items": [
+						{ "productId": "Tkirja", "quantity": 1, "unitPrice": 89 },
+						{ "productId": "Fkirja", "quantity": 2, "unitPrice": 18.9 },
+						{ "productId": "Fkirja2", "quantity": 1, "unitPrice": 22.9 }
+					],
+					"total": 149.7
+				}
+			]
+		},
+		{
+			"id": "U1003",
+			"name": "Reea Koskelo",
+			"email": "yyy.yy@example.test",
+			"password": "example123!",
+			"isAdmin": false,
+			"purchaseHistory": [
+				{
+					"orderId": "ORD-2026-121",
+					"purchasedAt": "2026-10-29T12:05:00Z",
+					"items": [
+						{ "productId": "Kkirja", "quantity": 2, "unitPrice": 72.5 },
+						{ "productId": "Skirja2", "quantity": 1, "unitPrice": 24.9 }
+					],
+					"total": 169.9
+				}
+			]
+		},
+		{
+			"id": "U1003",
+			"name": "Lauri Koskelo",
+			"email": "yyy.yy@example.test",
+			"password": "example123!!",
+			"isAdmin": false,
+			"purchaseHistory": [
+				{
+					"orderId": "ORD-2026-121",
+					"purchasedAt": "2026-10-29T12:05:00Z",
+					"items": [
+						{ "productId": "Kkirja", "quantity": 2, "unitPrice": 72.5 },
+						{ "productId": "Skirja2", "quantity": 1, "unitPrice": 24.9 }
+					],
+					"total": 169.9
+				}
+			]
+		}
+	]
+}
